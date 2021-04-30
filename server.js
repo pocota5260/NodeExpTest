@@ -15,7 +15,7 @@ app.use('/public', express.static('public'));
 app.use('/', require('./routes/index.js'));
 
 // HTTPサーバを起動する
-app.listen(port, () => {
+app.listen(port, function () {
   console.log(`listening at http://localhost:${port}`);
 });
  
