@@ -12,5 +12,19 @@
         <div class="container">
             <p><%= message %></p>
         </div>
+        <div>
+            <a href="?name=TEST&age=17">GETのテスト！！</a>
+            <p>Name:<%= name %></p>
+            <p>Age:<%= age %></p>
+        </div>
+
+        <div>
+            <form action="/" method="POST">
+                <p>好きなスポーツは何ですか？</p>
+                <input type="text" name="sports">
+                <input type="submit" value="POSTのテスト！！"></input>
+            </form>
+            <p>好きなスポーツは・・・<%= sports %>です</p>
+        </div>
     </body>
 </html>

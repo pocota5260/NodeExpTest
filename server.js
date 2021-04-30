@@ -4,6 +4,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// POSTのクエリーを良い感じに処理する
+app.use(express.urlencoded({extended: true}));
+
 // テンプレートエンジンを EJS に設定
 app.set('views', './views');
 app.set('view engine', 'ejs');
